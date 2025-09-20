@@ -10,12 +10,12 @@
 #define DAYS 7
 #define FILENAME "library_data.dat"
 
-// 座位状态
+//座位状态
 typedef struct {
     char status; // '0':空闲, '1':已预约, '2':被当前用户预约
 } Seat;
 
-// 系统全局状态
+//系统全局状态
 typedef struct {
     Seat seats[DAYS][FLOORS][ROWS][COLS]; // 四维数组：天-层-行-列
     char currentUser; // 当前登录用户 '\0'表示未登录，'A'-'Z'表示用户
