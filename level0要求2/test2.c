@@ -26,7 +26,7 @@ int main() {
     char line[50];
     //逐行读取文件内容
     while (fgets(line, sizeof(line), file) && count < MAX_ENTRIES) {
-        char* colon = strchr(line, ':'); //查找冒号位置来分割键和值
+        char* colon = strchr(line, ':'); //查找冒号位置来分割键和值。//strchr函数用于在给定的C字符串Str中查找字符Val的第一次出现。它返回指向该字符所在位置的指针。如果未找到，则返回null。
         if (colon == NULL) {
             continue; //若没有冒号，则跳过这行，继续读取下一行
         }
@@ -37,7 +37,7 @@ int main() {
         char* value = colon + 1;
         
         //去除值末尾的换行符
-        char* newline = strchr(value, '\n');
+        char* newline = strchr(value, '\n'); //strchr函数用于在给定的C字符串Str中查找字符Val的第一次出现。它返回指向该字符所在位置的指针。如果未找到，则返回null。
         if (newline != NULL) {
             *newline = '\0';
         }

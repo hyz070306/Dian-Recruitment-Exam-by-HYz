@@ -56,7 +56,7 @@ void initializeSystem() {
 
 
 //Level1-1: 登录程序
-int main() {
+void Login() {
     char input[10];
     char username[10];
     printf("=== Library Seat Reservation System ===\n");
@@ -80,7 +80,6 @@ int main() {
     }
 
     
-    return 0;
 }
 
 
@@ -88,3 +87,29 @@ int main() {
 
 //我实在是不会，没学过，放弃了...
 //之后求助Deepseek了.还看不懂，等以后学了变厉害了再说吧！
+
+
+//Level1-2: 座位预约系统
+void saveData() { //保存数据到文件
+    FILE* file = fopen(FILENAME, "wb");
+    if (file) {
+        fwrite(&lib, sizeof(LibrarySystem), 1, file);
+        fclose(file);
+    }
+}
+
+void loadData() { //从文件加载数据
+    FILE* file = fopen(FILENAME, "rb");
+    if (file) {
+        fread(&lib, sizeof(LibrarySystem), 1, file);
+        fclose(file);
+    } else {
+        initializeSystem();
+    }
+}
+
+
+
+
+
+

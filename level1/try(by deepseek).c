@@ -54,7 +54,7 @@ void loadData() {
     }
 }
 
-void handleLogin() {
+void handleLogin() { //登录处理函数
     char username[10];
     printf("Please enter a username: ");
     scanf("%s", username);
