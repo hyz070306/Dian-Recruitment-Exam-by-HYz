@@ -210,13 +210,13 @@ int main() {
     
     printf("=== Library Seat Reservation System ===\n");
     printf("Available commands:\n");
-    printf("Login\n");
-    printf("Exit - Log out\n");
-    printf("Quit - Exit the program\n");
-    printf("[Date] Floor [n] - Check the seat situation on a certain day on a certain floor.\n");
-    printf("Reserve [Date] Floor [n] Seat [r] [c] - Reserve a seat\n");
-    printf("Reservation - Check my appointment\n");
-    printf("Clear - Clear all data (admin only)\n");
+    printf("  Login - Log in\n");
+    printf("  Exit - Log out\n");
+    printf("  Quit - Exit the program\n");
+    printf("  [Date] Floor [n] - Check the seat situation on a certain day on a certain floor\n");
+    printf("  Reserve [Date] Floor [n] Seat [r] [c] - Reserve a seat\n");
+    printf("  Reservation - Check my appointment\n");
+    printf("  Clear - Clear all data (admin only)\n");
     printf("Date: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday\n");
     
     while (1) {
