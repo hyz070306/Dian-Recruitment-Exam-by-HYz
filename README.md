@@ -1,7 +1,7 @@
-# Dian团队新生招新题目——2025秋季
+# HYz完成的Dian团队新生秋季招新题目
 
 ## 项目描述
-本项目是Dian团队2025秋季招新题目的实现，包括Level 0、Level 1和Level 2的任务，但我能力有限，仅完成了Level0的硬性要求内容。
+本项目是HYz对Dian团队2025秋季招新题目的实现，包括Level 0、Level 1和Level 2的任务，但我能力有限，仅完成了Level0的硬性要求内容。
 
 ## 完成情况
 - Level 0: test1.exe 和 test2.exe，均实现；
