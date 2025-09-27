@@ -54,7 +54,7 @@ int main() {
     //处理输入，即可实现输入键输出对应值
     char input[50];
     while (1) {
-        printf("Enter a key:");
+        printf("Please enter a key:");
         scanf("%s", input);
         
         if (strcmp(input, "Quit") == 0) {
