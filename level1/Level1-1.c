@@ -68,7 +68,7 @@ void Login() {
     
         if (strlen(username) == 1 && username[0] >= 'A' && username[0] <= 'Z') {
             lib.currentUser = username[0];
-            printf("Login succeeded\n");
+            printf("Login successful.\n");
         } else if (strcasecmp(username, "Admin") == 0) {
             lib.currentUser = '&'; //为管理员设置特殊标记
             printf("Administrator login successful\n");
@@ -116,6 +116,8 @@ int main() {
     initializeSystem(); //初始化系统
     loadData();         //加载数据
     Login();           //登录
+    printf("Current user: %c\n", lib.currentUser);
     saveData();        //保存数据
     return 0;
 }
+
