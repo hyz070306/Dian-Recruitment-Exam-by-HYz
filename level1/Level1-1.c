@@ -112,4 +112,10 @@ void loadData() { //从文件加载数据
 
 
 
-
+int main() {
+    initializeSystem(); //初始化系统
+    loadData();         //加载数据
+    Login();           //登录
+    saveData();        //保存数据
+    return 0;
+}
